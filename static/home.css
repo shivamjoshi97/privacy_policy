@@ -12,3 +12,12 @@ html {
 .bottom {
     align-self: flex-end;
 }
+#preloader
+{
+    background: #000 url('../images/demo.gif') no-repeat center center;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
