@@ -1,0 +1,14 @@
+body,
+html {
+    height:100%;
+    background-color: #0A1931;
+}
+._model{
+    background-color: #c6c6c6;
+}
+._analysis{
+    background-color: #0A1931;
+}
+.bottom {
+    align-self: flex-end;
+}
