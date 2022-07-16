@@ -9,6 +9,7 @@
   <title>Document</title>
 </head>
 <body>
+	<div id="preloader"></div>
 	  <nav class="navbar navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -64,4 +65,10 @@
     </div>
   </div>
 </body>
+	<script type="text/javascript">
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load",function(){
+      loader.style.display = "none";
+    })
+  </script>
 </html>
