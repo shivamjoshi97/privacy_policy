@@ -12,7 +12,7 @@
 	  <nav class="navbar navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="public/images/logo.png" alt="" width="183.62" height="
+        <img src="{{ url_for('static', filename='logo.png')}}" alt="" width="183.62" height="
 50">
       </a>
       <button type="button" class="btn btn-warning">Upload Your Document</button>
@@ -57,7 +57,7 @@
       <div class="col-4">
       </div>
       <div class="col-4 text-center align-self-center">
-        <img src="public/images/footer_image.png" class="img-fluid" width="245" height="260">
+        <img src="{{ url_for('static', filename='footer_image.png')}}" class="img-fluid" width="245" height="260">
       </div>
       <div class="col-4">
       </div>
