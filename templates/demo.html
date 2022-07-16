@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>demo</title>
+<head>		
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/home.css">
+  <title>Document</title>
 </head>
 <body>
-	<form method="POST" action="/next" enctype="multipart/form-data" class="form">
+	  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="public/images/logo.png" alt="" width="183.62" height="
+50">
+      </a>
+      <button type="button" class="btn btn-warning">Upload Your Document</button>
+    </div>
+  </nav>
+<div class="container-fluid d-flex flex-column h-100">
+    <div class="row flex-grow-1 mt-5">
+      <div class="col-3">
+      </div>
+      <div class="col-6 text-center align-self-center">
+        <div class="col-md-auto text-center text-light">
+          <h1>
+            Get A Free Policy Optimization
+          </h1>
+          <h3 class="text-muted">
+            Upload Your Document Here
+          </h3>
+        </div>
+      </div>
+      <div class="col-3">
+      </div>
+    </div>
+    <form method="POST" action="/next" enctype="multipart/form-data" class="form">
 	    <div class="file-input">
 	        <input type="file" name="file" autocomplete="off" required class="file" id="file">
 	    </div>
@@ -15,5 +44,15 @@
 	        <label for="submit">Submit</label>
 	    </div>
     </form>
+    <div class="row flex-grow-1 mt-4">
+      <div class="col-4">
+      </div>
+      <div class="col-4 text-center align-self-center">
+        <img src="public/images/footer_image.png" class="img-fluid" width="245" height="260">
+      </div>
+      <div class="col-4">
+      </div>
+    </div>
+  </div>
 </body>
 </html>
