@@ -45,6 +45,34 @@
       loader.style.display = "none";
     }, 3000);
     </script>
+  <script type="text/javascript">
+    var elements = document.querySelectorAll('.slider');
+    var output=10;
+    var color ="red";
+    if(output>6 && output < 12)
+    {
+      
+      color="orange";
+    }else if(output > 12 && output < 18)
+    {
+      
+      color="green";
+    }
+    for(var i=0; i < elements.length; i++) 
+    {
+      if(color=="red")
+      {
+        var randomNumber = Math.floor(Math.random() * (35 - 0 + 1) + 0);
+      }else if(color=="orange")
+      {
+        var randomNumber = Math.floor(Math.random() * (65 - 36 + 1) + 36);
+      }else
+      {
+        var randomNumber = Math.floor(Math.random() * (99 - 67 + 1) + 67);
+      }
+      elements[i].style.backgroundImage = `linear-gradient(to right, ${color} ${randomNumber}%, rgba(0,0,0,0) 0%)`;
+    }
+  </script>
 </body>
 
 </html>
