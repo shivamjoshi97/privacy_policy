@@ -24,7 +24,7 @@
         <div class="card">
           <div class="card-body _analysis" height="450">
             <div class="myCircle">CSS</div>
-              <h3 class="text">{{finalOuput}}</h3>
+              <h3 class="text" id="output">{{finalOuput}}</h3>
               <input class="slider"><br>
               <label class="text">Parameter1</label><br>
               <input class="slider"><br>
@@ -50,7 +50,7 @@
     </script>
   <script type="text/javascript">
     var elements = document.querySelectorAll('.slider');
-    var output=10;
+    var output=document.getElementById("output").textContent;;
     var color ="red";
     if(output>6 && output < 12)
     {
