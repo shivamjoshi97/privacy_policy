@@ -79,6 +79,9 @@
       }
       elements[i].style.backgroundImage = `linear-gradient(to right, ${color} ${randomNumber}%, rgba(0,0,0,0) 0%)`;
     }
+    const element = document.getElementById('arch');
+		degree = output*5;
+		element.innerHTML = `<div class="semi-donut" style="--percentage:${degree}">Output</div>`;
   </script>
 </body>
 
