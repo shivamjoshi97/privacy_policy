@@ -17,14 +17,14 @@
         <img src="{{ url_for('static', filename='logo.png')}}" class="mb-2" alt="" width="183.62" height="
 60">
         <div class="container _model">
-          <p>{{pdfdata}}</p>
+          <textarea>{{pdfdata}}</textarea>
         </div>
       </div>
       <div class="col-4">
         <div class="card">
           <div class="card-body _analysis" height="450">
             <div class="myCircle">CSS</div>
-              <h3 class="text">Output</h3>
+              <h3 class="text">{{finalOuput}}</h3>
               <input class="slider"><br>
               <label class="text">Parameter1</label><br>
               <input class="slider"><br>
