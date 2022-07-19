@@ -52,6 +52,7 @@ textarea
 			box-sizing: border-box;
 			overflow: hidden;
 			--percentage: 0;
+			--fill: #fff;
 		}
 		.semi-donut::after
 		{
@@ -63,7 +64,7 @@ textarea
 			width: 300px;
 			height: 300px;
 			border: 50px solid;
-			border-color: #000 #000 #00ACC1 #00ACC1;
+			border-color: #000 #000 var(--fill) var(--fill);
 			border-radius:50%;
 			transform: rotate( calc(1deg * (-45 + var(--percentage) * 1.8)));
 		}
