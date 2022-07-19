@@ -17,7 +17,7 @@
         <img src="{{ url_for('static', filename='logo.png')}}" class="mb-2" alt="" width="183.62" height="
 60">
         <div class="container _model">
-          <textarea>{{pdfdata}}</textarea>
+          <textarea id="pdftext">{{pdfdata}}</textarea>
         </div>
       </div>
       <div class="col-4">
@@ -35,8 +35,7 @@
               <label class="text">Parameter4</label>   
             <p class="card-text my-5 text-light">Click the button below to fix your Privacy Policy</p>
             <a href="{{ url_for('static', filename='suggestion.html')}}" class="btn btn-warning">Fix My Privacy Policy</a>
-            <p style="color:#fff" id="suggestion" hidden="true">['we profile your data, we use cookies, we take/don’t take data from indirect sources',
-        'we collect your phone no., email address, bank details']</p>
+            <p style="color:#fff" id="suggestion" hidden="true">{{suggestions}}</p>
           </div>
         </div>
         <img src="{{ url_for('static', filename='footer_image.png')}}" class="img-fluid " width="245" height="260">
@@ -51,8 +50,15 @@
     }, 3000);
     </script>
   <script type="text/javascript">
+    var text_all =document.getElementById('pdftext').textContent; 
+    console.log(text_all);
     var suggest = document.getElementById('suggestion').textContent;
-    localStorage.setItem("suggestion",suggest)
+    var getData = 
+    {
+      "suggestion":suggest,
+      "pdfdata":text_all,
+    }
+    localStorage.setItem('dataKey',JSON.stringify(getData));
     var elements = document.querySelectorAll('.slider');
     var output=document.getElementById("output").textContent;;
     var color ="#fff";
